@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #2c3e50;
+    background: -webkit-linear-gradient(to right, #3498db, #2c3e50);
+    background: linear-gradient(to right, #3498db, #2c3e50);
+
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.weather-box {
+    padding: 20px;
+    border-radius: 20px;
+    margin: 100px auto 0;
+    text-align: center;
+    width: 400px;
+}
+
+.input-area {
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.inputfield {
+    height: 40px;
+    flex: 1;
+    font-size: 20px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+}
+
+.search-btn {
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+}
+
+.search-btn:hover {
+    background-color: rgb(218, 218, 218);
+}
+
+.search-btn img {
+    height: 20px;
+    width: 20px;
+}
+
+.data>img {
+    width: 140px;
+    height: 140px;
+    margin-top: 20px;
+}
+
+.data>h1 {
+    font-size: 80px;
+    color: white;
+    margin-top: -5px;
+}
+
+.data>h2 {
+    font-size: 50px;
+    color: white;
+    margin-top: -50px;
+}
+
+.details {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.add-data {
+    display: flex;
+}
+
+.add-data img {
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+}
+
+.more-details {
+    color: white;
+    font-size: 25px;
+}
+
+.wind-speed,
+.humidity {
+    margin-top: 0px;
+}
+
+.wind-text,
+.humidity-text {
+    margin-top: -20px;
+}
+
+.data {
+    display: none;
+}
+
+.error {
+    font-size: 20px;
+    float: left;
+    color: white;
+    margin-bottom: -15px;
+    display: none;
+}
+
+@media screen and (max-width: 450px) {
+    .weather-box {
+        width: 320px;
+        transition: 1s ease-in-out;
+    }
+
+    .input-area {
+        width: 300px;
+    }
+
+    .details {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .search-btn {
+        height: 40px;
+        width: 40px;
+        padding: 10px;
+    }
+
+    .search-btn img {
+        height: 20px;
+        width: 20px;
+    }
+
+}
